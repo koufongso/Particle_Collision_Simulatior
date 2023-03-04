@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="./assets/js/Solver.js"></script>
+    <script src="./assets/js/Particle.js"></script>
+    <script src="./assets/js/MinPQ.js"></script>
+    <!-- <script src="./assets/js/System.js"></script> -->
+    <script src="./assets/js/SystemV2.js"></script>
+    <title>Event-Driven Particle Collision Simulation</title>
+</head>
+
+<body>
+
+    <div></div>
+    <div id="display_panel">
+        <div>Time: <span id="timer">00:00</span></div>
+        <canvas id="screen" width="720" height="360"></canvas>
+    </div>
+    
+    <div id="control_panel" height="360">
+        <form>
+            <div>
+                <label for="num_particles">Number of Particles (0-100):</label>
+                <input type="number" id="num_particles" name="num_particles" min="0" max="100">
+                <button id="button_set_num">Set</button>
+                <span class="warning">Invalid input!</span>
+            </div><br>
+
+            <div>
+                <label for="duration">Duration [s]</label>
+                <input type="number" id="duration" name="duration" min="0">
+                <button id="button_set_duration">Set</button>
+                <span class="warning">Invalid input!</span>
+            </div>
+        </form>
+        <br>
+        <button id="button_run">Run</button>
+    </div>
+
+
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+
+</html>
